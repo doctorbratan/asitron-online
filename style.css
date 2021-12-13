@@ -18,7 +18,7 @@ header {
 }
 
 h6 {
-    font-size: 90%;
+    font-size: 100%;
 }
 
 
@@ -77,7 +77,7 @@ main {
 }
 
 h2, h3 {
-    font-size: 3vh;
+    font-size: 3.5vh;
 }
 
 @media screen and (max-width: 1023px) {
@@ -112,15 +112,20 @@ h2, h3 {
     }
 
     .side-img {
-        width: 100px;
+        width: 80px;
     }
 
     .devices {
-        width: 150px;
+        width: 100px;
     }
 
     .mobile-side {
         margin: 5px;
         flex-direction: row;
+        justify-content: space-around;
+    }
+
+    b {
+        font-size: 12px;
     }
 }

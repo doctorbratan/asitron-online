@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Asitron';
+  src: url(./Apex.eot);
+  src: url(./Apex.eot?#iefix) format('embedded-opentype'),
+       url(./Apex.woff2) format('woff2'),
+       url(./Apex.woff) format('woff'),
+       url(./Apex.svg#Apex) format('svg'),
+       url(./Apex.ttf) format('truetype'),
+       url(./Apex.otf) format('otf');
+}
