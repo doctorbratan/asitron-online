@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    background-color: black;
     background-image: url('Фон.svg');
+    background-size: cover;
+    background-position-x: center;
     font-family: 'Asitron';
     color: white;
 }
@@ -244,9 +245,10 @@ select {
     flex-wrap: wrap;
 }
 
-h4 {
-    font-size: 20px;
+h5 {
+    font-size: 18px;
 }
+
 
 /* Footer */
 
@@ -294,6 +296,11 @@ footer {
     text-decoration-line: none;
     color: white;
 }
+
+h4 {
+    font-size: 20px;
+}
+
 
 
 @media screen and (max-width: 1023px) {
