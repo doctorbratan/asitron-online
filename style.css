@@ -244,6 +244,10 @@ select {
     flex-wrap: wrap;
 }
 
+h4 {
+    font-size: 20px;
+}
+
 /* Footer */
 
 footer {
@@ -286,9 +290,11 @@ footer {
     width: 80%;
 }
 
-h4 {
-    font-size: 24px;
+#phone {
+    text-decoration-line: none;
+    color: white;
 }
+
 
 @media screen and (max-width: 1023px) {
 
