@@ -1,5 +1,9 @@
-body {
+html, body {
     margin: 0;
+    padding: 0;
+}
+
+body {
     background-image: url('Фон.svg');
     background-size: cover;
     background-position-x: center;
@@ -202,16 +206,19 @@ select {
     }
 
     select {
+        font-size: 12px;
         margin-top: 10px;
         width: 90%;
     }
     
     #device-info {
+        font-size: 12px;
         margin-top: 10px;
         width: 88%;
     }
     
     #search {
+        font-size: 12px;
         margin-top: 10px;
         width: 50%;
     }
@@ -233,7 +240,7 @@ select {
     display: flex;
 }
 
-#start-search {
+.start-search {
     margin: auto;
     align-self: center;
 }
@@ -247,6 +254,12 @@ select {
 
 h5 {
     font-size: 18px;
+}
+
+@media screen and (max-width: 1023px) {
+    h5 {
+        font-size: 14px;
+    }
 }
 
 
@@ -301,9 +314,22 @@ h4 {
     font-size: 20px;
 }
 
+a {
+    cursor: pointer;
+    text-decoration-line: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
 
 
 @media screen and (max-width: 1023px) {
+
+    h4 {
+        font-size: 16px;
+    }
 
     footer {
         margin-top: 30px;

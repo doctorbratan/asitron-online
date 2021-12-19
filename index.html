@@ -16,6 +16,9 @@
     <title>Asitron</title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <header>
         <h6>ЛУЧШЕЕ <br> КАЧЕСТВО</h6>
         <h6>АКСЕССУАРЫ</h6>
@@ -50,25 +53,31 @@
             </span>
         </div>
     </main>
-    <section>
-        <form action="">
-            <select name="" id="">
-                <option value="">Чехлы</option>
+    <section id="vue">
+        <form @submit.prevent="search" >
+
+            <select v-model="category" name="category">
+                <option selected v-for="option of categories"  v-bind:value="option" >{{ option }}</option>
             </select>
-            <input type="text" id="device-info">
-            <button id="search">Поиск</button>
+
+            <input type="text" id="device-info" v-model="text">
+
+            <input id="search"  type="submit" value="Поиск">
+
         </form>
         <div id="container">
-            <h5 id="start-search">Начните Поиск По Витрине!</h5>
-            <!-- <div id="items-div">
+            <h5 class="start-search" v-if="items.length == 0 && !api">Начните поиск по Витрине!</h5>
+            <h5 class="start-search" v-if="items.length == 0 && api">Свяжитесь с нами, и мы обязательно это найдем!</h5>
+            <div v-if="items.length > 0" id="items-div">
 
-            </div> -->
+            </div>
         </div>
     </section>
     <footer>
         <div class="footer-side">
             <h4>Как Нас Найти?</h4>
-            <img src="./img/footer/Карта.svg" id="map" alt="Как нас Найти?">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1384.3811106291255!2d28.834719875938188!3d46.0558408560911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b7cd59c7ddfb4f%3A0xc736f5d9290a70fa!2sAsitron!5e0!3m2!1sru!2s!4v1639877993827!5m2!1sru!2s" allowfullscreen="" loading="lazy"></iframe>
+            <h4>г. Чадыр-Лунга, ул. Чеканова 7</h4>
         </div>
         <div class="footer-side center">
             <h4>График Работы:</h4>
@@ -77,15 +86,17 @@
         </div>
         <div class="footer-side">
             <h4>Контакты:</h4>
-            <span class="contacts">
+            <a href="http://instagram.com/_u/asitron.service/" class="contacts">
                 <img class="contact-logo" src="./img/footer/Instagram-Logo.svg" alt="asitron-ge">
                 <h4>asitron-ge</h4>
-            </span>
-            <span class="contacts">
+            </a>
+            <a href="tel:+37379006119" class="contacts">
                 <img class="contact-logo" src="./img/footer/Phone.svg" alt="asitron-ge">
-                <h4 id="phone">068300082</h4>
-            </span>
+                <h4>+373 790 06 119</h4>
+            </a>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
