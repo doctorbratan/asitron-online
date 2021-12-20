@@ -276,15 +276,15 @@ select {
     border-bottom: 1px solid white;
 }
 
+.span-cost {
+    margin-top: 10px;
+}
+
 
 .item-cost {
-    font-family: 'Crashcoursebb';
-    font-size: 28px;
-    margin-top: 5px;
-    padding: 4px;
-    color: white;
+    font-family: 'Arial Black', bold;
+    font-size: 24px;
     color: red;
-    /* background-color: red; */
 }
 
 h5 {
