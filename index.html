@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1 , user-scalable=0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./font/styles.css">
+    <link rel="stylesheet" href="./font-cost/styles.css">
     <title>Asitron</title>
 </head>
 <body>
@@ -69,7 +70,16 @@
             <h5 class="start-search" v-if="items.length == 0 && !api">Начните поиск по Витрине!</h5>
             <h5 class="start-search" v-if="items.length == 0 && api">Свяжитесь с нами, и мы обязательно это найдем!</h5>
             <div v-if="items.length > 0" id="items-div">
-
+                <span class="item-cart" v-for="item in items">
+                    <b class="item-title">{{item.name}}</b>
+                    <img v-bind:src="item.image" class="item-img">
+                    <small class="descripton">{{item.descriprion}}</small>
+                    <span>
+                        <b class="item-cost">{{item.cost}}</b>
+                        <b>Лей</b>
+                    </span>
+                    
+                </span>
             </div>
         </div>
     </section>

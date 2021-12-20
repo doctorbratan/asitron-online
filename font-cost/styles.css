@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Crashcoursebb';
+  src: url(./Crashcoursebb.eot);
+  src: url(./Crashcoursebb.eot?#iefix) format('embedded-opentype'),
+       url(./Crashcoursebb.otf) format('otf'),
+       url(./Crashcoursebb.svg#Crashcoursebb) format('svg'),
+       url(./Crashcoursebb.ttf) format('truetype'),
+       url(./Crashcoursebb.woff) format('woff'),
+       url(./Crashcoursebb.woff2) format('woff2');
+}

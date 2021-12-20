@@ -9,7 +9,7 @@ new Vue({
     },
     mounted(){
         this.categoriesLoad()
-        // this.onloadSearch()
+        this.onloadSearch()
     },
     methods:{
 
