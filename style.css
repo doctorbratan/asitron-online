@@ -297,6 +297,12 @@ h5 {
     h5 {
         font-size: 14px;
     }
+
+    .item-cost {
+        font-family: 'Arial Black', bold;
+        font-size: 20px;
+        color: red;
+    }
 }
 
 
@@ -325,13 +331,14 @@ footer {
 }
 
 .contacts {
+    width: 60%;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .contact-logo {
     width: 30px;
-    margin-right: 10px;
 }
 
 #map {
