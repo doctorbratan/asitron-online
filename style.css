@@ -130,7 +130,6 @@ h2, h3 {
     }
 
     .mobile-side {
-        margin: 5px;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -247,7 +246,8 @@ select {
 
 #items-div {
     flex: 1;
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
