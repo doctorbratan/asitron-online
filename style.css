@@ -286,8 +286,7 @@ select {
 
 
 .item-cost {
-    font-family: 'Impact';
-    font-size: 26px;
+    font-size: 28px;
     color: red;
 }
 
@@ -298,8 +297,16 @@ h5 {
 
 @media screen and (max-width: 1023px) {
 
+    .item-title {
+        font-size: 22px;
+    }
+
     h5 {
         font-size: 14px;
+    }
+
+    .item-cost {
+        font-size: 30px;
     }
 
 }
