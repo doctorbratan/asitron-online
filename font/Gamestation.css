@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Gamestation';
+  src: url(./GamestationCondensed.eot);
+  src: url(./GamestationCondensed.eot?#iefix) format('embedded-opentype'),
+       url(./GamestationCondensed.woff2) format('woff2'),
+       url(./GamestationCondensed.woff) format('woff'),
+       url(./GamestationCondensed.ttf) format('truetype'),
+       url(./GamestationCondensed.svg#GamestationCondensed) format('svg'),
+       url(./GamestationCondensed.otf) format('otf');
+}
