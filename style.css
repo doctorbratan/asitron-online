@@ -299,10 +299,13 @@ h5 {
 @media screen and (max-width: 1023px) {
 
     .item-cart {
+        background-image: url('./img/item-background.svg');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        border-top: 2px dashed white;
-        border-bottom: 2px dashed white;
+        border: 2px dashed white;
     }
 
     .item-title {
