@@ -29,7 +29,7 @@ new Vue({
                 category: "Чехлы"
             })
             .then( (response) => {
-                this.items = response.data
+                this.items = response.data.sort( (a, b) => { return a.position - b.position; }  )
             }) 
         },
 
@@ -41,10 +41,8 @@ new Vue({
                 })
                 .then( (response) => {
                     this.api = true
-                    this.items = response.data
-                    console.log(response.data)
+                    this.items = response.data.sort( (a, b) => { return a.position - b.position; }  )
                 }) 
         }
-
-    },
+    }
 })
