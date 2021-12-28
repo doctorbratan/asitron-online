@@ -72,7 +72,7 @@
             <div v-if="items.length > 0" id="items-div">
                 <span class="item-cart" v-for="item in items">
                     <b class="item-title">{{item.name}}</b>
-                    <img v-bind:src="item.image" class="item-img">
+                    <img v-if="item.image !== 'null' " v-bind:src="item.image" class="item-img">
                     <small class="descripton">{{item.descriprion}}</small>
                     <span class="span-cost">
                         <b class="item-cost">{{item.cost}}</b>

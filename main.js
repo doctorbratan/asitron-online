@@ -25,7 +25,7 @@ new Vue({
         onloadSearch()  {
             axios
             .post('https://asitron.herokuapp.com/api/website/items', {
-                text: "xiaomi iphone ",
+                text: "iphone ",
                 category: "Чехлы"
             })
             .then( (response) => {
