@@ -55,6 +55,13 @@ main {
     display: flex;
 }
 
+@media screen and (max-width: 1023px) {
+    main {
+        height: auto;
+    }
+}
+
+
 .main-div {
     display: flex;
     flex-direction: column;
